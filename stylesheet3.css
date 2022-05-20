@@ -1,0 +1,194 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Kaisei Decol', serif;
+  background-color: wheat;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+}
+
+ul {
+  margin-block-start: 0em;
+}
+
+li {
+  list-style: none;
+}
+
+h1 {
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  background-color: darkred;
+  color: wheat;
+  width: 100%;
+  height: 10vw;
+}
+
+header .container {
+  height: 100%;
+}
+
+header .top-bar {
+  position: relative;
+  width: 90%;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+header .right {
+  position: absolute;
+  top: 30%;
+  right: 0;
+  display: flex;
+}
+
+header .right li {
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+header i {
+  cursor: pointer;
+  color: wheat;
+}
+
+header #insta {
+  font-size: 30px;
+}
+
+header p {
+  width: 50%;
+  text-align: left;
+}
+
+header img {
+  width: 30%;
+  height: 100%;
+  padding: 7px 0;
+}
+
+header .top-bar ul {
+  font-size: 20px;
+  line-height: 8px;
+  cursor: pointer;
+  margin-top: 12px;
+}
+
+header .top-bar a {
+  color: black;
+}
+
+.menu-bar {
+  background-color: darkred;
+  width: 100%;
+  line-height: 70px;
+  text-align: center;
+  display: none;
+}
+
+.menu-bar ul {
+  padding-inline-start: 0px;
+  margin-block-end: 0em;
+}
+
+.menu-bar li {
+  border-top: 1px solid wheat;
+}
+
+.menu-bar a {
+  color: wheat;
+  display: block;
+}
+
+.menu-bar a:hover {
+  background-color: rgb(182, 0, 0);
+}
+
+main .container {
+  width: 90%;
+  margin: auto;
+}
+
+.sec-title {
+  margin-top: 10vw;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.sec-title p {
+  font-size: 13px;
+}
+
+#tokotoko-picture {
+  width: 40%;
+  border-radius: 50%;
+}
+
+.introduce-content {
+  width: 60%;
+  margin: auto;
+  padding-bottom: 100px;
+}
+
+.foot {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media(max-width: 1024px) {
+  header img {
+    width: 40%;
+    height: 100%;
+    padding: 7px 0;
+  }
+}
+
+
+
+@media(max-width: 768px) {
+
+  header {
+    height: 20vw;
+  }
+
+
+  header img {
+    width: 60%;
+    height: 100%;
+    padding: 7px 0;
+  }
+
+  .sec-title {
+    margin-top: 20vw;
+  }
+
+  #tokotoko-picture {
+    width: 60%;
+  }
+
+  .introduce-content {
+    width: 82%;
+  }
+}
+
+
+
